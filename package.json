@@ -1,0 +1,20 @@
+{
+  "name": "markup-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".hermione.conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "concurrently \"http-server\" \"selenium-standalone start\"",
+    "test": "hermione"
+  },
+  "author": "yangirov",
+  "license": "ISC",
+  "dependencies": {
+    "hermione": "^0.69.0",
+    "http-server": "^0.11.1",
+    "selenium-standalone": "^6.15.0"
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Тест верстки</title>
+</head>
+<body>
+
+<style>
+	.test {
+		margin: 20px;
+	}
+	.test__button {
+		font-size: 18px;
+	}
+	.test__text {
+		display: none;
+		margin: 10px 0;
+		padding: 10px 0; 
+		border-top: 1px solid #ccc;
+	}
+	.test__text_show {
+		display: block;
+	}
+</style>
+
+<div class="test">
+	<button class="test__button">Нажать</button>
+	<div class="test__text">Какой-то текст</div>
+</div>
+
+<script>
+	document.querySelector('.test__button')
+					.addEventListener('click', onButtonClick);
+
+	function onButtonClick() {
+		document.querySelector('.test__text')
+						.classList.toggle('test__text_show');
+	}
+</script>
+	
+</body>
+</html>
